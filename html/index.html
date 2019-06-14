@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="no-outlines">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- ==== Document Title ==== -->
+        <title>Dashboard </title>
+
+        <!-- ==== Document Meta ==== -->
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- ==== Favicon ==== -->
+        <link rel="icon" href="favicon.png" type="image/png">
+
+        <!-- ==== Google Font ==== -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:400,500">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+        <link rel="stylesheet" href="assets/css/perfect-scrollbar.min.css">
+        <link rel="stylesheet" href="assets/css/morris.min.css">
+        <link rel="stylesheet" href="assets/css/select2.min.css">
+        <link rel="stylesheet" href="assets/css/jquery-jvectormap.min.css">
+        <link rel="stylesheet" href="assets/css/horizontal-timeline.min.css">
+        <link rel="stylesheet" href="assets/css/weather-icons.min.css">
+        <link rel="stylesheet" href="assets/css/dropzone.min.css">
+        <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+        <link rel="stylesheet" href="assets/css/ion.rangeSlider.skinFlat.min.css">
+        <link rel="stylesheet" href="assets/css/datatables.min.css">
+        <link rel="stylesheet" href="assets/css/fullcalendar.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Page Level Stylesheets -->
+
+    </head>
+    <body>
+
+        <!-- Wrapper Start -->
+        <div class="wrapper">
+            <!-- Navbar Start -->
+            <header class="navbar navbar-fixed">
+                <!-- Navbar Header Start -->
+                <div class="navbar--header">
+                    <!-- Logo Start -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <!-- Logo End -->
+
+                    <!-- Sidebar Toggle Button Start -->
+                    <a href="#" class="navbar--btn" data-toggle="sidebar" title="Toggle Sidebar">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <!-- Sidebar Toggle Button End -->
+                </div>
+                <!-- Navbar Header End -->
+
+                <!-- Sidebar Toggle Button Start -->
+                <a href="#" class="navbar--btn" data-toggle="sidebar" title="Toggle Sidebar">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <!-- Sidebar Toggle Button End -->
+
+
+
+                <div class="navbar--nav ml-auto">
+                    <ul class="nav">
+                        <!-- Nav User Start -->
+                        <li class="nav-item dropdown nav--user online">
+                            <a href="#" class="nav-link" data-toggle="dropdown">
+                                <img src="assets/img/avatars/01_80x80.png" alt="" class="rounded-circle">
+                                <span>Admin</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="profile.html"><i class="far fa-user"></i>Profile</a></li>
+                                <li><a href="mailbox_inbox.html"><i class="far fa-envelope"></i>Inbox</a></li>
+                                <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a href="lock-screen.html"><i class="fa fa-lock"></i>Lock Screen</a></li>
+                                <li><a href="login.html"><i class="fa fa-power-off"></i>Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- Nav User End -->
+                    </ul>
+                </div>
+            </header>
+            <!-- Navbar End -->
+
+            <!-- Sidebar Start -->
+            <aside class="sidebar" data-trigger="scrollbar">
+
+
+                <!-- Sidebar Navigation Start -->
+                <div class="sidebar--nav">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li class="active">
+                                    <a href="index.html">
+                                        <i class="fa fa-home"></i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-address-book"></i>
+                                        <span>Users</span>
+                                    </a>
+
+                                    <ul>
+                                      
+                                        <li><a href="users.html">All Users</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-sticky-note"></i>
+                                        <span>Categories</span>
+                                    </a>
+
+                                    <ul>
+                                        <li><a href="Categories.html">All Categories</a></li>
+                                        <li><a href="Category.html">Create Category</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </aside>
+            <!-- Sidebar End -->
+
+            <!-- Main Container Start -->
+            <main class="main--container">
+                <!-- Page Header Start -->
+                <section class="page--header">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!-- Page Title Start -->
+                                <h2 class="page--title h5">Dashboard</h2>
+                                <!-- Page Title End -->
+
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item active"><span>Dashboard</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <!-- Summary Widget Start -->
+                                <div class="summary--widget">
+                                    <div class="summary--item">
+                                        <p class="summary--chart" data-trigger="sparkline" data-type="bar" data-width="5" data-height="38" data-color="#009378">2,9,7,9,11,9,7,5,7,7,9,11</p>
+
+                                        <p class="summary--title">This Month</p>
+                                        <p class="summary--stats text-green">0</p>
+                                    </div>
+
+                                    <div class="summary--item">
+                                        <p class="summary--chart" data-trigger="sparkline" data-type="bar" data-width="5" data-height="38" data-color="#e16123">2,3,7,7,9,11,9,7,9,11,9,7</p>
+
+                                        <p class="summary--title">Last Month</p>
+                                        <p class="summary--stats text-orange">0</p>
+                                    </div>
+                                </div>
+                                <!-- Summary Widget End -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page Header End -->
+
+                <!-- Main Content Start -->
+                <section class="main--content">
+                    <div class="row gutter-20">
+                        <div class="col-md-4">
+                            <div class="panel">
+                                <!-- Mini Stats Panel Start -->
+                                <div class="miniStats--panel">
+                                    <div class="miniStats--header bg-darker">
+                                        <p class="miniStats--chart" data-trigger="sparkline" data-type="bar" data-width="4" data-height="30" data-color="#2bb3c0">5,6,9,4,9,5,3,5,9,15,3,2,2,3,9,11,9,7,20,9,7,6</p>
+
+                                        <p class="miniStats--label text-white bg-blue">
+                                            <i class="fa fa-level-up-alt"></i>
+                                            <span>10%</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="miniStats--body">
+                                        <i class="miniStats--icon fa fa-user text-blue"></i>
+
+                                        <p class="miniStats--caption text-blue">Monthly</p>
+                                        <h3 class="miniStats--title h4">New Users</h3>
+                                        <p class="miniStats--num text-blue">3</p>
+                                    </div>
+                                </div>
+                                <!-- Mini Stats Panel End -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel">
+                                <!-- Mini Stats Panel Start -->
+                                <div class="miniStats--panel">
+                                    <div class="miniStats--header bg-darker">
+                                        <p class="miniStats--chart" data-trigger="sparkline" data-type="bar" data-width="4" data-height="30" data-color="#e16123">2,2,3,9,11,9,7,20,9,7,6,5,6,9,4,9,5,3,5,9,15,3</p>
+
+                                        <p class="miniStats--label text-white bg-orange">
+                                            <i class="fa fa-level-down-alt"></i>
+                                            <span>10%</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="miniStats--body">
+                                        <i class="miniStats--icon fa fa-ticket-alt text-orange"></i>
+
+                                        <p class="miniStats--caption text-orange">Monthly</p>
+                                        <h3 class="miniStats--title h4">Users</h3>
+                                        <p class="miniStats--num text-orange">0</p>
+                                    </div>
+                                </div>
+                                <!-- Mini Stats Panel End -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel">
+                                <!-- Mini Stats Panel Start -->
+                                <div class="miniStats--panel">
+                                    <div class="miniStats--header bg-darker">
+                                        <p class="miniStats--chart" data-trigger="sparkline" data-type="bar" data-width="4" data-height="30" data-color="#009378">2,2,3,9,11,9,7,20,9,7,6,5,6,9,4,9,5,3,5,9,15,3</p>
+
+                                        <p class="miniStats--label text-white bg-green">
+                                            <i class="fa fa-level-up-alt"></i>
+                                            <span>10%</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="miniStats--body">
+                                        <i class="miniStats--icon fa fa-rocket text-green"></i>
+
+                                        <p class="miniStats--caption text-green">Monthly</p>
+                                        <h3 class="miniStats--title h4">Memberships</h3>
+                                        <p class="miniStats--num text-green">0</p>
+                                    </div>
+                                </div>
+                                <!-- Mini Stats Panel End -->
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-xl-9">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">
+                                        <select name="filter" data-trigger="selectmenu" data-minimum-results-for-search="-1">
+                                            <option value="top-search">Recent Users</option>
+                                            <option value="average-search">Latest Users</option>
+                                        </select>
+                                    </h3>
+
+                                    <div class="dropdown">
+                                        <button type="button" class="btn-link dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-sync"></i>Update Data</a></li>
+                                            <li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
+                                            <li><a href="#"><i class="fa fa-times"></i>Remove Panel</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table style--2">
+                                            <thead>
+                                                <tr>
+                                                    <th>Profile</th>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Membership</th>
+                                                    <th>Posts</th>
+                                                    <th>Tracking No.</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Table Row Start -->
+                                                <tr>
+                                                    <td><img src="assets/img/products/thumb-01.jpg" alt=""></td>
+                                                    <td>3BSD59</td>
+                                                    <td><a href="#" class="btn-link">Leisure Suit Casual</a></td>
+                                                    <td>$99</td>
+                                                    <td>2</td>
+                                                    <td><span class="text-muted">#BG6R9853lP</span></td>
+                                                    <td><span class="label label-success">Active</span></td>
+                                                </tr>
+                                                <!-- Table Row End -->
+
+                                                <!-- Table Row Start -->
+                                                <tr>
+                                                    <td><img src="assets/img/products/thumb-02.jpg" alt=""></td>
+                                                    <td>3BSD59</td>
+                                                    <td><a href="#" class="btn-link">Leisure Suit Casual</a></td>
+                                                    <td>$99</td>
+                                                    <td>2</td>
+                                                    <td><span class="text-muted">#BG6R9853lP</span></td>
+                                                    <td><span class="label label-warning">Pending</span></td>
+                                                </tr>
+                                                <!-- Table Row End -->
+
+                                                <!-- Table Row Start -->
+                                                <tr>
+                                                    <td><img src="assets/img/products/thumb-03.jpg" alt=""></td>
+                                                    <td>3BSD59</td>
+                                                    <td><a href="#" class="btn-link">Leisure Suit Casual</a></td>
+                                                    <td>$99</td>
+                                                    <td>2</td>
+                                                    <td><span class="text-muted">#BG6R9853lP</span></td>
+                                                    <td><span class="label label-info">Rejected</span></td>
+                                                </tr>
+                                                <!-- Table Row End -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Total Memberships</h3>
+
+                                    <div class="dropdown">
+                                        <button type="button" class="btn-link dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-ellipsis-v"></i>
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><i class="fa fa-sync"></i>Update Data</a></li>
+                                            <li><a href="#"><i class="fa fa-cogs"></i>Settings</a></li>
+                                            <li><a href="#"><i class="fa fa-times"></i>Remove Panel</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="panel-chart">
+                                    <div class="chart--title text-blue">
+                                        <h2 class="h2">$0</h2>
+                                    </div>
+
+                                    <!-- Morris Line Chart 03 Start -->
+                                    <div id="morrisLineChart03" class="chart--body line--chart style--3"></div>
+                                    <!-- Morris Line Chart 03 End -->
+
+                                    <div class="chart--action">
+                                        <a href="#" class="btn-link">Export PDF <i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+                <!-- Main Content End -->
+
+                <!-- Main Footer Start -->
+                <footer class="main--footer main--footer-light">
+                    <p>Copyright &copy; <a href="#">WebMobileZ</a>. All Rights Reserved.</p>
+                </footer>
+                <!-- Main Footer End -->
+            </main>
+            <!-- Main Container End -->
+        </div>
+        <!-- Wrapper End -->
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/perfect-scrollbar.min.js"></script>
+        <script src="assets/js/jquery.sparkline.min.js"></script>
+        <script src="assets/js/raphael.min.js"></script>
+        <script src="assets/js/morris.min.js"></script>
+        <script src="assets/js/select2.min.js"></script>
+        <script src="assets/js/jquery-jvectormap.min.js"></script>
+        <script src="assets/js/jquery-jvectormap-world-mill.min.js"></script>
+        <script src="assets/js/horizontal-timeline.min.js"></script>
+        <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/jquery.steps.min.js"></script>
+        <script src="assets/js/dropzone.min.js"></script>
+        <script src="assets/js/ion.rangeSlider.min.js"></script>
+        <script src="assets/js/datatables.min.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <!-- Page Level Scripts -->
+
+    </body>
+</html>
